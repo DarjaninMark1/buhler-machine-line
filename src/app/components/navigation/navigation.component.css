@@ -1,0 +1,75 @@
+.status-bar {
+    display: flex;
+    align-items: center;       
+    justify-content: space-between; 
+    background-color: #dcdcdc;  
+    padding: 10px;             
+    height: 80px;              
+  }
+  
+  .logo {
+    flex: 1;                    
+  }
+  
+  .logo img {
+    height: 50px;               
+  }
+  
+  .right-content {
+    display: flex;              
+    align-items: center;        
+  }
+  
+  .time, .operator {
+    display: flex;
+    align-items: center;        
+    font-size: 16px;            
+    font-weight: 500;           
+    margin-left: 60px;          
+  }
+  
+  .time .material-icons, .operator .material-icons {
+    margin-right: 8px;          
+  }
+  
+  .status-rectangles-container {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    background-color: #dcdcdc;
+  }
+  
+  .divider {
+    height: 10px;
+    background-color: #00aa9d;
+    width: 100%;
+  }
+
+  .rectangle {
+    display: flex;
+    align-items: center;       
+    justify-content: center;   
+    position: relative;     
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 10px;
+    width: 110px;
+  }
+
+  .text {
+    position: relative;       
+    font-size: 18px;
+    text-align: center;       
+  }
+  
+  .icon-top-right {
+    position: absolute;      
+    top: 5px;               
+    right: 5px;             
+    font-size: 20px;         
+    color: white;           
+  }
+  

@@ -1,0 +1,18 @@
+<div class="status-rectangles-container">
+    <div class="rectangle-wrapper" *ngFor="let machine of machines; let i = index">
+      <div class="rectangle" [ngStyle]="{'background-color': machine.color}">
+        <!-- Small icon in top-right corner -->
+        <span class="material-icons small-icon" [ngStyle]="{'color': machine.logoColor}">{{ machine.logo }}</span>
+  
+        <!-- Big icon in the middle -->
+        <span class="material-icons big-icon" [ngStyle]="{'color': machine.textColor}">{{ machine.machineLogo || 'settings' }}</span>
+  
+        <!-- Machine name below the big icon -->
+        <span class="text-content" [ngStyle]="{'color': machine.textColor}">{{ machine.name }}</span>
+      </div>
+  
+      <!-- Connector line between rectangles (except after the last one) -->
+      <div class="connector" *ngIf="i < machines.length - 1"></div>
+    </div>
+  </div>
+  

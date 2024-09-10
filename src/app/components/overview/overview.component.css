@@ -1,0 +1,56 @@
+  /* Container for the rectangles */
+  .status-rectangles-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: calc(100% - 170px); 
+  }
+  
+  /* Wrapper for each rectangle and connector */
+  .rectangle-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Styling for the rectangle itself */
+  .rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 30px;
+    width: 100px;
+    height: 80px;
+  }
+  
+  /* Big icon in the middle of the rectangle */
+  .big-icon {
+    font-size: 60px;
+    color: #ffffff;
+  }
+  
+  /* Small icon in the top-right corner */
+  .small-icon {
+    position: absolute;
+    top: 5px;               
+    right: 5px;             
+    font-size: 20px;         
+    color: white;        
+  }
+  
+  /* Text below the big icon */
+  .text-content {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  /* Connector line between rectangles */
+  .connector {
+    width: 45px;
+    height: 5px;
+    background-color: #2d9a0b;
+  }
+  

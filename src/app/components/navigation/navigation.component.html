@@ -1,0 +1,29 @@
+<div class="status-bar">
+  <!-- Logo -->
+  <div class="logo">
+    <img src="assets/logo.png" alt="Logo" />
+  </div>
+
+  <!-- Time with clock icon -->
+  <div class="time">
+    <span class="material-icons">access_time</span>
+    <span>{{ now | date:"dd.MM.yyyy HH:mm" }}</span>
+  </div>
+
+  <!-- Operator with user icon -->
+  <div class="operator">
+    <span class="material-icons">account_circle</span>
+    <span>{{ operatorName }}</span>
+  </div>
+</div>
+
+<!-- Green divider  -->
+ <div class="divider" ></div>
+
+ <!-- machines in navigation -->
+ <div class="status-rectangles-container">
+  <div class="rectangle" *ngFor="let machine of machines" [ngStyle]="{'background-color': machine.color}">
+    <div class="material-icons icon-top-right" [ngStyle]="{'color': machine.logoColor}">{{ machine.logo }}</div>
+    <div class="rectangle-text" [ngStyle]="{'color': machine.textColor}">{{ machine.name }}</div>
+  </div>
+</div>

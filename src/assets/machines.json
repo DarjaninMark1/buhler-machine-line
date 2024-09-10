@@ -1,0 +1,6 @@
+[
+    { "name": "Scale", "status": "Running" },
+    { "name": "Attacher", "status": "Alarm" },
+    { "name": "Packer", "status": "Running" },
+    { "name": "Closer", "status": "Warning" }
+  ]
